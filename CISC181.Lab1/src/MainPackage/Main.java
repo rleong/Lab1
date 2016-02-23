@@ -41,6 +41,7 @@ public class Main {
 		System.out.println("Please enter a number from 0 to 20:");
 		System.out.println("What is your expected average return in investment?");
 		annualReturn = reader.nextDouble();
+		//Must be in range of 0-20, if not, prompts the user again for the correct input
 		while(annualReturn < 0 || annualReturn > 20){
 			System.out.println("Please enter a number from 0 to 20!");
 			System.out.println("What is your expected average return in investment?");
@@ -53,6 +54,7 @@ public class Main {
 		System.out.println("Please enter a number from 0 to 3!");
 		System.out.println("What is your expected annual return from retirement?");
 		annualRetirement = reader.nextDouble();
+		//Must be in the range of 0-3, if not, prompts the user again for the correct input
 		while(annualRetirement < 0 || annualRetirement > 3){
 			System.out.println("Please enter a number from 0 to 3!");
 			System.out.println("What is your expected annual return from retirement?");
@@ -99,6 +101,8 @@ public class Main {
 	}
 	
 	public static void main(String[] args){
+		
+		//EXECUTE ALL THE CODE!!!!
 		
 		welcomeMessage();
 		askInput();
